@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria - Projeto Verdejar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8f0;
+            color: #333;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+        header {
+            background: linear-gradient(135deg, #66BB6A, #2E7D32);
+            color: #fff;
+            text-align: center;
+            padding: 60px 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            font-weight: 700;
+        }
+        header h3 {
+            margin-top: 10px;
+            font-size: 1.4rem;
+        }
+        nav {
+            background: #1B5E20;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 10px 20px;
+            font-weight: 600;
+            transition: background 0.3s ease;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background: #4CAF50;
+        }
+        section {
+            padding: 50px 20px;
+            background: #fff;
+            border-radius: 10px;
+            margin: 30px 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #2E7D32;
+            text-align: center;
+            font-size: 2.5rem;
+        }
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+        .image-gallery img {
+            width: calc(33% - 10px);
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 768px) {
+            .image-gallery img {
+                width: calc(50% - 10px);
+            }
+        }
+        @media (max-width: 480px) {
+            .image-gallery img {
+                width: 100%;
+            }
+        }
+        footer {
+            background: #1B5E20;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        footer a {
+            color: #66BB6A;
+            text-decoration: none;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Projeto Verdejar</h1>
+            <h3>Momentos que transformam a Mata Atlântica</h3>
+        </div>
+    </header>
+    <nav>
+        <a href="Verdejar.html">Voltar à Página Inicial</a>
+        <a href="Início.html">Início</a>
+        <a href="Sobre.html">Sobre</a>
+        <a href="Objetivo.html">Objetivos</a>
+        <a href="Contato.html">Contato</a>
+    </nav>
+    <section id="galeria" class="container">
+        <h2>Galeria de Imagens</h2>
+        <div class="image-gallery">
+            <img src="img1.jpg" alt="Equipe plantando árvores">
+            <img src="img2.jpg" alt="Ação educativa">
+            <img src="img3.jpg" alt="Reflorestamento em progresso">
+            <img src="img4.jpg" alt="Comunidade participando">
+            <img src="img5.jpg" alt="Resultados do plantio">
+            <img src="img6.jpg" alt="Estudantes engajados">
+        </div>
+    </section>
+    <footer>
+        <p style="text-align: center;">© 2025 Projeto Verdejar | <a href="https://www.instagram.com/projeto_verdejar01/" style="color:#66BB6A;">Instagram</a></p>
+    </footer>
+</body>
+</html>
